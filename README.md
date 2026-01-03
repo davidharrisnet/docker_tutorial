@@ -85,4 +85,11 @@ Server:
 1. newgrp docker  # switch to docker
 1. docker run hello-world
 
+* This may not be necessary with the newgrp command and a cmd restart but to create the $HOME/.docker 
+1. sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
+1. chmod g+rwx "$HOME/.docker" -R
+
+
 ## Chapter 2
+
+1. docker pull nginx:latest
